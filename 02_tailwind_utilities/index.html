@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+              roboto: ["Robot"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Belajar Tailwind Utilities</title>
+    <style type="text/tailwindcss">
+      /* * {
+        border: 1px solid red;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">
+      Belajar Utilities part 1
+    </h1>
+
+    <section class="mb-10 bg-purple-300">
+      <h2 class="text-3xl text-center p-10">Spacing</h2>
+      <div class="border-cyan-400 m-13 bg-red-500 text-center">Margin</div>
+      <div class="p-8 border-cyan-400 m-13 bg-red-500 text-center">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-400">
+      <h2 class="text-3xl text-center p-10">Sizing</h2>
+      <div class="w-32 h-32 bg-yellow-200">Kotak 1</div>
+      <!-- <div class="max-w-xs min-h-screen">Kotak 2</div> -->
+    </section>
+
+    <section class="mb-10 bg-gradient-to-r from-cyan-500 to-green-500 .">
+      <h2 class="text-3xl text-center p-10">Colors</h2>
+      <div class="w-32 h-32 bg-yellow-200">Kotak 1</div>
+      <!-- <div class="max-w-xs min-h-screen">Kotak 2</div> -->
+    </section>
+
+    <section class="font-Roboto max-w-3xl mx-auto">
+      <h2 class="mb-4 text-4xl font-bold">Typography Tailwindcss</h2>
+      <div class="mb-4 text-gray-600">
+        By
+        <a href="#" class="underline font-medium text-blue-600">Farhan Akmal</a>
+        5 Desember 2023
+      </div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+        accusamus voluptates at natus
+        <a href="" class="underline font-medium">repellendus</a>, tempora
+        aperiam nobis, voluptatem numquam, nam mollitia officiis voluptas sunt
+        sed ipsa porro neque rem praesentium animi repudiandae itaque fugiat
+        aliquam tempore quibusdam. Eligendi quod itaque in id quisquam nam,
+        deserunt repudiandae, ipsum et possimus facere.
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quo
+        saepe maiores quae! A dicta repellendus unde ut hic laboriosam?
+      </blockquote>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis veniam,
+        facilis laborum optio voluptate incidunt, quos fuga nemo placeat
+        blanditiis molestias esse a, non possimus nisi iusto nobis veritatis
+        explicabo?
+      </p>
+    </section>
+
+    <div
+      class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-y-scroll bg-fixed"
+      style="
+        background-image: url('https://source.unsplash.com/1000x600?computer');
+      "
+    >
+      <p class="p-5 text-2xl">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ratione
+        quia facilis sunt, nulla incidunt placeat minus labore aut, nihil
+        officia, culpa doloremque error fuga quaerat! Possimus ut reiciendis
+        quos, consequatur labore eos quis est, fuga sint nobis nulla, harum
+        maxime in recusandae rerum repellat odio cum pariatur. Modi, aliquid
+        error fugit sed temporibus animi dolore sit enim, dolorem similique
+        pariatur perspiciatis veniam tempora ad cupiditate natus esse facere
+        iste sint incidunt autem ut quasi! Est eius nulla iusto quis aperiam
+        voluptas soluta perferendis praesentium necessitatibus ab, alias culpa!
+        Sunt harum molestias vel minus adipisci consectetur deleniti quos
+        inventore magnam?
+      </p>
+    </div>
+
+    <!-- part 2 -->
+    <div
+      class="mt-32 max-w-xl mx-auto h-96 bg-slate-300 bg bg-cover rounded-2xl border-4 border-slate-500 shadow-2xl shadow-slate-500 overflow-hidden hover:brightness-150 flex"
+      style="background-image: url(./img/1.jpg)"
+    >
+      <div
+        class="w-[200px] h-[200px] bg-green-500 m-auto backdrop-blur-lg"
+      ></div>
+    </div>
+
+    <div class="mb-96"></div>
+  </body>
+</html>

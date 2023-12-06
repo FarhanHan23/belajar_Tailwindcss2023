@@ -1,0 +1,13 @@
+pakai tailwind.config.css tanpa install cli. jadi pakai cdn aja
+
+//margin
+nilai margin m-1 = 0.25rem . 1 rem = 16px
+kalau pakai - didepan m maka akan berlawanan
+
+//padding 
+p- angka 
+
+//sizing
+width dan height. pakai satuan 1 = 0.25rem
+
+mix-blend-multiply
